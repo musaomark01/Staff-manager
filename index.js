@@ -111,7 +111,7 @@ function startApp() {
                 type: 'list',
                 name: 'role',
                 message: "Select the employee's role:",
-                choices: roles, // Use roles directly here
+                choices: roles,
               },
             ])
             .then((employeeAnswers) => {
@@ -124,7 +124,7 @@ function startApp() {
           break;
 
         case 'Update Employee Role':
-          // Handle the "Update Employee Role" option
+          
           startApp();
           break;
 
@@ -138,5 +138,4 @@ function startApp() {
       }
     });
 }
-
 startApp();
